@@ -1,0 +1,70 @@
+git 
+
+>> git hub is an online repo
+
+commands
+
+git clone >> to clone online repo into local storage
+	use commang with ssh link from git hub
+
+git status >> provides the status of what has happened since lst update
+
+git add >> used to tell git to start tracking changes in speciff or current directory
+	git add . or git add "file-name"
+
+git commit -m "Message header here"
+	>> used to commit changes in git
+	>> can include optional additional message [another -m] to indicate description
+	>> git commit -m "Message title" -m "type description here"
+
+generating ssh keys
+ssh-keygen -t rsa -b 4096 -C "valud email connected to github"
+give key a name
+it generates private and public key
+
+this is required when trying to push update from local repo to online github repo
+
+git push >> command to push to remote server
+git pull >> to pull from remote server
+
+global configs
+
+git config --global user.name " username"
+git config --global user.email "email"
+git config --global color.ui auto
+
+git init . >> initialize brand new working directory
+
+gut init >> git add >> git commit >. git push >> git pull
+
+git add >> command to move files into staging area
+git rm --cached "filename" remove file from stagin area
+
+if you dont intiailize a directory .. cant use git
+
+to add evey folder in a directory >> whether parent or children directory
+
+git add -A
+
+git log >> to see change summary
+
+to see details
+
+git show "commit hash code"
+
+git diff >> shows what has just been added
+
+push from local machine to remote 
+>> for github repo
+
+create ssh key
+	>>
+	ssh-keygen -t ed25519 -C "nobeldeen@yahoo.com"
+	eval "$(ssh-agent -s)"
+	ssh-add ~/.ssh/id_ed25519
+	clip < ~/.ssh/id_ed25519.pub
+
+
+git remote add origin git@github.com:nobeldeen/git.git
+git branch -M main
+git push -u origin main
