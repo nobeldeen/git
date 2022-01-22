@@ -68,7 +68,6 @@ create ssh key
 git remote add origin git@github.com:nobeldeen/git.git
 git branch -M main
 git push -u origin main
-<<<<<<< HEAD
 
 Branches >>
 
@@ -92,5 +91,10 @@ To switch/toggle between main and branch
 
 to move into and create branch in one step
 >> git checkout -b [branch name]
-=======
->>>>>>> feature-a
+
+To delete a branch>>
+	git branch -d [branch name]
+
+check git log in remote repo
+
+git log --oneline
