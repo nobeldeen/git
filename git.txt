@@ -68,3 +68,33 @@ create ssh key
 git remote add origin git@github.com:nobeldeen/git.git
 git branch -M main
 git push -u origin main
+
+Branches >>
+
+master branch  == master branch
+	default branch
+Branch >> independent line of development.
+
+git branch >> check branch on local repo
+git brnach -r >> check branch on remote repo
+git branch -a >> chec branch on all repo
+
+creating branch means taking copy of your of your work and working on it without affecting the main.
+
+git branch [branch name]
+
+To switch to branch >>
+	git checkout [branch name]
+
+To switch/toggle between main and branch
+	git checkout -
+
+to move into and create branch in one step
+>> git checkout -b [branch name]
+
+To delete a branch>>
+	git branch -d [branch name]
+
+check git log in remote repo
+
+git log --oneline
